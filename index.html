@@ -3,56 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirecting...</title>
+    <title>&#8203;</title> <!-- Ký tự tàng hình -->
 
+    <!-- CẤU HÌNH THẺ OPEN GRAPH -->
+    <!-- Chỗ này bạn kiếm 1 bức ảnh vuông, có vẽ sẵn line trắng chia 3 ô rồi up lên lấy link dán vào nhé -->
     <meta property="og:image" content="https://img.upanh.tv/2024/05/03/fake-sensitive-content.png" />
+    <meta property="og:image:width" content="1080" />
+    <meta property="og:image:height" content="1080" />
     
-    <meta property="og:title" content=" " />
-    
-    <meta property="og:description" content=" " />
-    
+    <!-- Dùng ký tự tàng hình để Facebook không hiển thị text -->
+    <meta property="og:title" content="&#8203;" />
+    <meta property="og:description" content="&#8203;" />
+    <meta property="og:site_name" content="&#8203;" />
     <meta property="og:type" content="website" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
 
-
-    <meta http-equiv="refresh" content="0; url=https://shope.ee/DUMMY_LINK" />
-
+    <!-- REDIRECT SANG SHOPEE -->
+    <meta http-equiv="refresh" content="0; url=https://link-shopee-cua-ban" />
     <script>
-        // CÁCH 2: Dùng JavaScript (Chính xác và nhanh hơn)
         window.onload = function() {
-            // --- THAY LINK SHOPEE AFFILIATE CỦA BẠN VÀO ĐÂY ---
-            var targetUrl = "https://shope.ee/DUMMY_LINK";
-            
-            // Sử dụng replace để khi user bấm nút 'Back' trên điện thoại, 
-            // họ sẽ quay lại Facebook luôn thay vì bị kẹt ở trang trắng này.
-            window.location.replace(targetUrl);
+            window.location.replace("https://link-shopee-cua-ban");
         };
     </script>
 </head>
-
-<body style="background-color: #ffffff; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
-    
-    <div style="text-align: center; color: #555;">
-        <div class="spinner"></div>
-        <p style="margin-top: 15px; font-size: 14px;">Đang mở ứng dụng Shopee...</p>
-    </div>
-
-    <style>
-        .spinner {
-            width: 40px;
-            height: 40px;
-            border: 4px solid #f3f3f3;
-            border-top: 4px solid #ee4d2d; /* Màu cam Shopee */
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
-            margin: 0 auto;
-        }
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-    </style>
-
+<body style="background: #fff;">
 </body>
 </html>
