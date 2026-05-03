@@ -6,7 +6,9 @@
     <title>&#8203;</title> <!-- Ký tự tàng hình -->
 
     <!-- CẤU HÌNH THẺ OPEN GRAPH -->
-    <!-- Chỗ này bạn kiếm 1 bức ảnh vuông, có vẽ sẵn line trắng chia 3 ô rồi up lên lấy link dán vào nhé -->
+    <meta property="og:url" content="https://thnhsng.github.io/contents/" />
+    
+    <!-- SỬA LINK ẢNH: Nên upload ảnh thẳng lên GitHub chung chỗ với file HTML này và dùng link trực tiếp -->
     <meta property="og:image" content="https://img.upanh.tv/2024/05/03/fake-sensitive-content.png" />
     <meta property="og:image:width" content="1080" />
     <meta property="og:image:height" content="1080" />
@@ -14,12 +16,14 @@
     <!-- Dùng ký tự tàng hình để Facebook không hiển thị text -->
     <meta property="og:title" content="&#8203;" />
     <meta property="og:description" content="&#8203;" />
-    <meta property="og:site_name" content="&#8203;" />
     <meta property="og:type" content="website" />
 
-    <!-- REDIRECT SANG SHOPEE -->
+    <!-- ĐÃ XÓA thẻ meta refresh để Bot Facebook không bị văng đi chỗ khác -->
+
+    <!-- REDIRECT SANG SHOPEE (Chỉ chạy với người dùng thật) -->
     <script>
         window.onload = function() {
+            // Thay link Shopee của bạn vào đây
             window.location.replace("https://link-shopee-cua-ban");
         };
     </script>
